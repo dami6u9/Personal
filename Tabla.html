@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>TABLA DE MULTIPLICAR</h1>
+<hr>
+<script>
+    function saltarlinea() {
+        
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");         
+    }
+
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+
+    imprimir("MÉTODO while")
+    var numbase = parseInt(prompt("¿Qué número desea multiplicar?"))
+    var numpor = 0
+    var limite = parseInt(prompt("¿Hasta cuanto desea multiplicar?"))
+
+
+    while(numpor <= limite){
+        imprimir(numbase * numpor)
+        numpor++
+    }
+    //En ves de poner numpor = numpor + 1 , es mejor poner "numpor++"
+
+    imprimir("MÉTODO for")
+
+    for(var multiplo = 1;multiplo <= 10;multiplo = multiplo + 1){
+
+        imprimir(5 * multiplo);
+    }
+    //Ambos pueden ser usados para lo mismo, Ud. decide.
+    
+</script>
